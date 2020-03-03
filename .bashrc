@@ -103,16 +103,23 @@ alias l='ls -CF'
 alias server="ssh ml@10.0.0.5"
 # Power down computer
 alias off="systemctl poweroff"
+# Hibernate
+alias sleep="systemctl hibernate"
 # Default python command to open python 3.6
 alias python="python3"
 # Don't ask
 alias doge="python3 ~/Misc/doge.py"
+# Open local terminal in server dir
+alias servshell="cd /run/user/1000/gvfs/sftp:host=10.0.0.5/home/ml/"
+alias linode="ssh mikelimpus@lish-fremont.linode.com"
+cowsay Green Is My Pepper | lolcat
+
 # execute neofetch on start
 neofetch
 
 # set default text editor
-# export VISUAL ="vim"
-# export EDITOR ="$VISUAL"
+export VISUAL="vim"
+export EDITOR="$VISUAL"
 
 
 # Add an "alert" alias for long running commands.  Use like so:
